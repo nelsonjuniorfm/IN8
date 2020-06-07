@@ -1,0 +1,30 @@
+@font-face {
+    font-family: HelveticaUltraLight;
+    src: url('./Fonts/HelveticaUltraLt_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url('./Fonts/Roboto-Regular_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url('./Fonts/Roboto-Light_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: HelveticaCondensed;
+    src: url('./Fonts/Roboto-Light_0.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+html, body, #root {
+    height: 100%;
+}
