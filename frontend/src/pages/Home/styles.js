@@ -12,10 +12,15 @@ const ContainerHome = styled.div`
     background-size: 100% 100%;
     padding: 0px 20%;
     align-items: center;
+
+    @media (max-width: 768px){
+        padding: 0px 10%;
+    };
+
     @media (max-width: 480px){
         background-image: url(${ImgBackgroundMobile});
         height: 1024px;
-    }
+    };
 `;
 
 const Header = styled.header`

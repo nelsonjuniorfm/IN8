@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ContainerHome, ContentHome, Header, BoxLogo, BoxMenu } from './styles';
 import { Menu } from '../../components';
 import logo from '../../assets/logo-in8-dev.svg';
