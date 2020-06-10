@@ -4,6 +4,7 @@ import { Menu } from '../../components';
 import logo from '../../assets/logo-in8-dev.svg';
 
 export default function Home() {
+
   return (
       <ContainerHome>
         <Header>

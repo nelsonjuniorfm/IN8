@@ -9,6 +9,51 @@ const ContainerLista = styled.div`
     overflow-y: auto;
     @media (max-width: 480px){
         height: 624px;
+        padding: 0px 10%;
+    };
+
+    #listaMobile{
+        @media(max-width: 480px){
+            display: block;
+            width: 100%;
+        }
+        display: none;
+        margin-top: 30px;
+        margin-right: 5%;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        ul > li > a {
+            margin: 0px 2px;
+            border: 1px solid  #29abe2;
+            border-bottom: none;
+            border-radius: 0;
+            padding: 8px 35px;
+        };
+        #ini{
+            margin-left: 0px;
+        };
+        #fim{
+            margin-right: 0px;
+        };
+        #myTabContent{
+            border: 1px solid  #29abe2;
+            width: 100%;
+            div {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            };
+            ul > li {
+                list-style: none;
+                border-bottom: 1px solid #29abe2;
+                margin-top: 20px;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        };
+        #teste{
+            width: 405px;
+        }
     }
 `;
 
@@ -33,8 +78,9 @@ const HeaderLista = styled.div`
         font-size: 0.6em;
     };
     @media (max-width: 480px){
-        font-size: 0.8em;
+        font-size: 1.4em;
         margin-top: 50px;
+        text-align: center;
     }
 `;
 
@@ -46,6 +92,7 @@ const ContentLista = styled.div`
     align-items: flex-end;
     @media(max-width: 480px){
         margin-top: 50px;
+        display: none;
     }
 `;
 
@@ -62,8 +109,8 @@ const Table = styled.table`
 
 const TableHeader = styled.th`
     color: #012d51;
-    border-bottom: ${props => (props.noBorderBottom ? 'none': '1px solid #29abe2')};
-    border-right: ${props => (props.noBorderRight ? 'none': '1px solid #29abe2')};
+    border-bottom: ${props => (props.noBorderBottom ? 'none' : '1px solid #29abe2')};
+    border-right: ${props => (props.noBorderRight ? 'none' : '1px solid #29abe2')};
     padding: 10px 20px;
     text-transform: uppercase;
 `;
@@ -73,8 +120,8 @@ const Line = styled.tr`
 
 const Column = styled.td`
     color: #808080;
-    border-bottom: ${props => (props.noBorderBottom ? 'none': '1px solid #29abe2')};
-    border-right: ${props => (props.noBorderRight ? 'none': '1px solid #29abe2')};
+    border-bottom: ${props => (props.noBorderBottom ? 'none' : '1px solid #29abe2')};
+    border-right: ${props => (props.noBorderRight ? 'none' : '1px solid #29abe2')};
     padding: 10px 15px;
     font-family: HelveticaCondensed;
 `;
@@ -82,6 +129,23 @@ const Column = styled.td`
 const BoxIcon = styled.div`
     justify-content: flex-end;
     margin-left: 3%;
+`;
+
+const TagTitle = styled.span`
+    font-weight: bold;
+    font-size: 1.5em;
+`;
+
+const TagName = styled.span`
+    color: #012d51;
+    font-weight: bold;
+    font-size: 1.5em;
+`;
+
+const TagContent = styled.span`
+    color: #808080;
+    margin-left: 10px;
+    font-size: 1.3em;
 `;
 
 export {
@@ -92,5 +156,8 @@ export {
     TableHeader,
     Line,
     Column,
-    BoxIcon
+    BoxIcon,
+    TagName,
+    TagContent,
+    TagTitle
 };

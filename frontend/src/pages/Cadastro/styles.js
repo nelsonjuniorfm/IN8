@@ -8,6 +8,7 @@ const ContainerCadatro = styled.div`
     padding: 0px 20%;
     @media (max-width: 480px){
         height: 1024px;
+        padding: 0px 10%;
     }
 `;
 
@@ -31,7 +32,7 @@ const HeaderCadastro = styled.div`
         font-size: 0.6em;
     }
     @media (max-width: 480px){
-        font-size: 1em;
+        font-size: 1.4em;
     }
 `;
 
@@ -63,6 +64,7 @@ const Input = styled.input`
     font-family: HelveticaCondensed;
     @media(max-width: 480px){
         font-size: 1em;
+        width: 600px;
     }
 `;
 
@@ -83,6 +85,11 @@ const Buttom = styled.button`
     text-transform: uppercase;
     font-family: HelveticaCondensed;
     font-size: 35px;
+    @media(max-width: 480px){
+        width: 100%;
+        height: 100px;
+        font-size: 3.5em;
+    }
 `;
 
 const BoxButtom = styled.div`
