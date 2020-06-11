@@ -30,7 +30,7 @@ const ContentSobre = styled.div`
         color: #FFF;
     };
     @media(max-width: 480px){
-        margin: 15% 0;
+        margin: 9% 0;
         p{
             font-size: 1.7em;
             padding: 8px;
