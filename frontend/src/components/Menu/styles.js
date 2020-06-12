@@ -46,6 +46,10 @@ const ResponsiveMenu = styled.div`
 
         display: ${props => props.open ? 'block' : 'none' };
 
+        @media(min-width: 768px){
+            display: none;
+        }
+
         background-color: #29abe2;
         position: absolute;
         top: 0;

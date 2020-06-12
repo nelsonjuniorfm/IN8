@@ -22,7 +22,7 @@ const ContentSobre = styled.div`
     align-items: center;   
     color: #FFF;
     font-family: RobotoLight;
-    margin: 5% 0;
+    margin: 2% 0;
     a {
         pointer-events: none;
         cursor: default;
